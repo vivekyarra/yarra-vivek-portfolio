@@ -5,7 +5,7 @@ import { AuroraText } from "../magicui/aurora-text";
 import { GradientBars } from "../ui/gradient-bars";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { Ellipsis, ExternalLink, Play } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const movies = [
 	{
@@ -25,10 +25,10 @@ const movies = [
 		span: "lg:col-span-2",
 	},
 	{
-		title: "Khakee (2004)",
-		subtitle: "2004",
-		image: "/movies/khakee-2004.jpg",
-		imdb: "https://www.imdb.com/title/tt0347332/",
+		title: "Khakee (2017)",
+		subtitle: "2017",
+		image: "/movies/khakee-2017.jpg",
+		imdb: "https://www.imdb.com/title/tt7060460/",
 		tone: "bg-[#615073]",
 		span: "lg:col-span-2",
 	},
@@ -141,19 +141,19 @@ const EasterEggSection = () => {
 							>
 								<div className="absolute inset-0 bg-[radial-gradient(130%_120%_at_0%_0%,rgba(255,255,255,0.22),transparent)]" />
 								<div className="relative z-10 flex h-full items-stretch gap-4">
-									<div className="relative h-[120px] w-[90px] sm:h-[140px] sm:w-[102px] shrink-0 overflow-hidden rounded-xl border border-white/20 bg-black/30 p-1">
+									<div className="relative h-[124px] w-[92px] sm:h-[144px] sm:w-[106px] shrink-0 overflow-hidden rounded-xl border border-white/20 bg-black/30">
 										<Image
 											src={movie.image}
 											alt={`${movie.title} poster`}
 											fill
-											className="object-contain"
+											className="object-cover scale-[1.07]"
 											sizes="120px"
 										/>
 									</div>
 									<div className="flex min-w-0 flex-1 flex-col justify-between">
 										<div className="space-y-2">
 											<div className="flex items-start justify-between gap-3">
-												<h4 className="text-xl md:text-3xl font-semibold leading-tight">
+												<h4 className="text-xl md:text-2xl font-semibold leading-tight">
 													{movie.title}
 												</h4>
 												<span className="rounded-full border border-white/40 px-3 py-1 text-xs font-semibold whitespace-nowrap">
@@ -164,17 +164,9 @@ const EasterEggSection = () => {
 												{movie.subtitle}
 											</p>
 										</div>
-										<div className="flex items-center justify-between gap-4">
-											<div className="inline-flex items-center gap-2 text-sm font-semibold text-white/90">
-												<ExternalLink className="size-4" />
-												<span>Open on IMDb</span>
-											</div>
-											<div className="inline-flex items-center gap-3 text-white/80">
-												<Ellipsis className="size-5" />
-												<span className="flex size-10 items-center justify-center rounded-full bg-white text-black">
-													<Play className="size-5 fill-current" />
-												</span>
-											</div>
+										<div className="inline-flex items-center gap-2 text-sm font-semibold text-white/90">
+											<ExternalLink className="size-4" />
+											<span>Open on IMDb</span>
 										</div>
 									</div>
 								</div>

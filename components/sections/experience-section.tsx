@@ -19,42 +19,102 @@ import { motion } from "motion/react";
 const items = [
 	{
 		id: 1,
-		date: "2025",
-		title: "Problem Solving Milestone",
-		company: "LeetCode",
+		date: "2026",
+		title: "Software Engineering Virtual Experience",
+		company: "JPMorgan Chase (Forage)",
 		description: (
 			<div className="flex flex-col gap-2">
-				<p>
-					Solved 500+ LeetCode problems while improving algorithmic
-					thinking, coding speed, and interview readiness.
-				</p>
+				<ul className="list-disc ml-4">
+					<li>
+						Built a Spring Boot microservice integrating Kafka for
+						high-volume transactional processing.
+					</li>
+					<li>
+						Implemented REST APIs with JPA-backed persistence and
+						validated reliability through testing.
+					</li>
+				</ul>
 				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">DSA</Badge>
-					<Badge variant="outline">Problem Solving</Badge>
-					<Badge variant="outline">Python</Badge>
+					<Badge variant="outline">Spring Boot</Badge>
+					<Badge variant="outline">Kafka</Badge>
+					<Badge variant="outline">REST APIs</Badge>
+					<Badge variant="outline">JPA</Badge>
 				</div>
 			</div>
 		),
 	},
 	{
 		id: 2,
-		date: "2024",
-		title: "Hackathon Participant",
-		company: "24-Hour Build Sprint",
-		description:
-			"Participated in a 24-hour hackathon and built a web-based automation tool as a rapid prototype.",
+		date: "2026",
+		title: "Cloud Architecture Virtual Experience",
+		company: "AWS APAC (Forage)",
+		description: (
+			<div className="flex flex-col gap-2">
+				<ul className="list-disc ml-4">
+					<li>
+						Designed scalable AWS hosting architecture for growth and
+						performance bottlenecks.
+					</li>
+					<li>
+						Evaluated reliability, scalability, and cost trade-offs
+						across architecture options.
+					</li>
+				</ul>
+				<div className="flex gap-2 flex-wrap">
+					<Badge variant="outline">AWS</Badge>
+					<Badge variant="outline">Cloud Architecture</Badge>
+					<Badge variant="outline">Scalability</Badge>
+					<Badge variant="outline">Cost Optimization</Badge>
+				</div>
+			</div>
+		),
 	},
 	{
 		id: 3,
-		date: "2024",
-		title: "DSA Training",
-		company: "On-Campus Program",
-		description:
-			"Completed structured on-campus training in Data Structures and Algorithms using Python.",
+		date: "2026",
+		title: "Data Analytics Virtual Experience",
+		company: "Tata iQ (Forage)",
+		description: (
+			<div className="flex flex-col gap-2">
+				<ul className="list-disc ml-4">
+					<li>
+						Performed GenAI-assisted exploratory data analysis for
+						customer delinquency risk indicators.
+					</li>
+					<li>
+						Designed a no-code predictive approach for collections
+						strategy decisions.
+					</li>
+				</ul>
+				<div className="flex gap-2 flex-wrap">
+					<Badge variant="outline">Data Analytics</Badge>
+					<Badge variant="outline">GenAI</Badge>
+					<Badge variant="outline">EDA</Badge>
+				</div>
+			</div>
+		),
 	},
 	{
 		id: 4,
-		date: "2023 - Present",
+		date: "2026",
+		title: "Competitive Programming Achievement",
+		company: "Codeforces",
+		description: (
+			<div className="flex flex-col gap-2">
+				<p>
+					Secured Rank 16 in Codeforces Round 1081 (Div. 2) among
+					13,600+ participants.
+				</p>
+				<div className="flex gap-2 flex-wrap">
+					<Badge variant="outline">Competitive Programming</Badge>
+					<Badge variant="outline">Algorithms</Badge>
+				</div>
+			</div>
+		),
+	},
+	{
+		id: 5,
+		date: "2023 - 2027",
 		title: "B.Tech in Computer Science & Engineering",
 		separator: "at",
 		company: "Vignan's Lara Institute of Technology & Science",
@@ -73,33 +133,20 @@ const items = [
 		),
 	},
 	{
-		id: 5,
-		date: "Forage Virtual Experience",
-		title: "Software Experience Programs",
-		company: "JPMorgan Chase, AWS APAC, Tata iQ",
+		id: 6,
+		date: "2025",
+		title: "Problem Solving Milestone",
+		company: "LeetCode",
 		description: (
 			<div className="flex flex-col gap-2">
-				<ul className="list-disc ml-4">
-					<li>
-						Built a Spring Boot microservice with Kafka for high-volume
-						transactional processing.
-					</li>
-					<li>
-						Designed a scalable AWS hosting architecture with
-						cost-performance tradeoff analysis.
-					</li>
-					<li>
-						Performed GenAI-assisted data analytics for financial risk
-						and collections strategy.
-					</li>
-				</ul>
+				<p>
+					Solved 500+ LeetCode problems while improving algorithmic
+					thinking, coding speed, and interview readiness.
+				</p>
 				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">Spring Boot</Badge>
-					<Badge variant="outline">Kafka</Badge>
-					<Badge variant="outline">REST APIs</Badge>
-					<Badge variant="outline">AWS</Badge>
-					<Badge variant="outline">GenAI</Badge>
-					<Badge variant="outline">Data Analytics</Badge>
+					<Badge variant="outline">DSA</Badge>
+					<Badge variant="outline">Problem Solving</Badge>
+					<Badge variant="outline">Python</Badge>
 				</div>
 			</div>
 		),

@@ -3,22 +3,83 @@ import React from "react";
 import { TextReveal } from "../magicui/text-reveal";
 import { AuroraText } from "../magicui/aurora-text";
 import { GradientBars } from "../ui/gradient-bars";
-import { Badge } from "../ui/badge";
 import { motion } from "motion/react";
+import Image from "next/image";
+import { Ellipsis, ExternalLink, Play } from "lucide-react";
 
 const movies = [
-	"Movie Pick 01",
-	"Movie Pick 02",
-	"Movie Pick 03",
-	"Movie Pick 04",
-	"Movie Pick 05",
-	"Movie Pick 06",
-	"Movie Pick 07",
-	"Movie Pick 08",
-	"Movie Pick 09",
-	"Movie Pick 10",
-	"Movie Pick 11",
-	"Movie Pick 12",
+	{
+		title: "The Wolf of Wall Street",
+		subtitle: "2013",
+		image: "/movies/wolf-of-wall-street.png",
+		imdb: "https://www.imdb.com/title/tt0993846/",
+		tone: "bg-[#960808]",
+		span: "lg:col-span-4",
+	},
+	{
+		title: "The Godfather Part II",
+		subtitle: "1974",
+		image: "/movies/godfather-2.jpg",
+		imdb: "https://www.imdb.com/title/tt0071562/",
+		tone: "bg-[#1F1F23]",
+		span: "lg:col-span-2",
+	},
+	{
+		title: "Khakee (2004)",
+		subtitle: "2004",
+		image: "/movies/khakee-2004.jpg",
+		imdb: "https://www.imdb.com/title/tt0347332/",
+		tone: "bg-[#615073]",
+		span: "lg:col-span-2",
+	},
+	{
+		title: "The Shawshank Redemption",
+		subtitle: "1994",
+		image: "/movies/shawshank-redemption.jpg",
+		imdb: "https://www.imdb.com/title/tt0111161/",
+		tone: "bg-[#0F139F]",
+		span: "lg:col-span-4",
+	},
+	{
+		title: "Janatha Garage",
+		subtitle: "2016",
+		image: "/movies/janatha-garage.jpg",
+		imdb: "https://www.imdb.com/title/tt5946852/",
+		tone: "bg-[#342D66]",
+		span: "lg:col-span-6",
+	},
+	{
+		title: "Inception",
+		subtitle: "2010",
+		image: "/movies/inception.jpg",
+		imdb: "https://www.imdb.com/title/tt1375666/",
+		tone: "bg-[#B20068]",
+		span: "lg:col-span-3",
+	},
+	{
+		title: "Zodiac",
+		subtitle: "2007",
+		image: "/movies/zodiac.jpg",
+		imdb: "https://www.imdb.com/title/tt0443706/",
+		tone: "bg-[#137B79]",
+		span: "lg:col-span-3",
+	},
+	{
+		title: "The Prestige",
+		subtitle: "2006",
+		image: "/movies/the-prestige.jpg",
+		imdb: "https://www.imdb.com/title/tt0482571/",
+		tone: "bg-[#3E2E68]",
+		span: "lg:col-span-4",
+	},
+	{
+		title: "The Social Network",
+		subtitle: "2010",
+		image: "/movies/the-social-network.png",
+		imdb: "https://www.imdb.com/title/tt1285016/",
+		tone: "bg-[#15135E]",
+		span: "lg:col-span-2",
+	},
 ];
 
 const EasterEggSection = () => {
@@ -56,11 +117,14 @@ const EasterEggSection = () => {
 						whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.6, delay: 0.2 }}
-						className="mt-30 grid grid-cols-1 md:grid-cols-3 gap-4 w-full"
+						className="mt-16 grid grid-cols-1 lg:grid-cols-6 gap-4 w-full"
 					>
 						{movies.map((movie, idx) => (
-							<motion.div
-								key={movie}
+							<motion.a
+								key={movie.title}
+								href={movie.imdb}
+								target="_blank"
+								rel="noopener noreferrer"
 								initial={{
 									opacity: 0,
 									scale: 0.9,
@@ -73,13 +137,48 @@ const EasterEggSection = () => {
 								}}
 								viewport={{ once: true }}
 								transition={{ duration: 0.6, delay: idx * 0.04 }}
-								className="rounded-xl border border-border bg-card px-5 py-5 min-h-40 flex flex-col justify-between"
+								className={`${movie.span} ${movie.tone} group relative min-h-[200px] overflow-hidden rounded-3xl border border-white/10 p-4 md:p-5 text-white`}
 							>
-								<h4 className="text-lg font-semibold">{movie}</h4>
-								<Badge variant="outline" className="w-fit">
-									Poster + IMDb link coming soon
-								</Badge>
-							</motion.div>
+								<div className="absolute inset-0 bg-[radial-gradient(130%_120%_at_0%_0%,rgba(255,255,255,0.22),transparent)]" />
+								<div className="relative z-10 flex h-full items-stretch gap-4">
+									<div className="relative h-[120px] w-[90px] sm:h-[140px] sm:w-[102px] shrink-0 overflow-hidden rounded-xl border border-white/20 bg-black/30 p-1">
+										<Image
+											src={movie.image}
+											alt={`${movie.title} poster`}
+											fill
+											className="object-contain"
+											sizes="120px"
+										/>
+									</div>
+									<div className="flex min-w-0 flex-1 flex-col justify-between">
+										<div className="space-y-2">
+											<div className="flex items-start justify-between gap-3">
+												<h4 className="text-xl md:text-3xl font-semibold leading-tight">
+													{movie.title}
+												</h4>
+												<span className="rounded-full border border-white/40 px-3 py-1 text-xs font-semibold whitespace-nowrap">
+													IMDb
+												</span>
+											</div>
+											<p className="text-sm md:text-base text-white/80">
+												{movie.subtitle}
+											</p>
+										</div>
+										<div className="flex items-center justify-between gap-4">
+											<div className="inline-flex items-center gap-2 text-sm font-semibold text-white/90">
+												<ExternalLink className="size-4" />
+												<span>Open on IMDb</span>
+											</div>
+											<div className="inline-flex items-center gap-3 text-white/80">
+												<Ellipsis className="size-5" />
+												<span className="flex size-10 items-center justify-center rounded-full bg-white text-black">
+													<Play className="size-5 fill-current" />
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</motion.a>
 						))}
 					</motion.div>
 				</div>

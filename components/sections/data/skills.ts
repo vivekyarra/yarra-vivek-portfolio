@@ -24,32 +24,12 @@ const skills: Skills = {
 			img: "https://cdn.svgporn.com/logos/react.svg",
 		},
 		{
-			name: "HTML",
-			img: "/icons/html.svg",
-		},
-		{
-			name: "CSS",
-			img: "/icons/css.svg",
-		},
-		{
-			name: "Bootstrap",
-			img: "https://cdn.simpleicons.org/bootstrap",
-		},
-		{
 			name: "Node.js",
 			img: "https://cdn.svgporn.com/logos/nodejs-icon.svg",
 		},
 		{
-			name: "Express.js",
-			img: "https://cdn.simpleicons.org/express",
-		},
-		{
 			name: "FastAPI",
-			img: "https://cdn.simpleicons.org/fastapi",
-		},
-		{
-			name: "REST APIs",
-			img: "https://cdn.simpleicons.org/postman",
+			img: "/icons/fastapi.svg",
 		},
 	],
 	"Infra & Cloud": [
@@ -62,24 +42,24 @@ const skills: Skills = {
 			img: "https://cdn.svgporn.com/logos/postgresql.svg",
 		},
 		{
-			name: "MySQL",
-			img: "https://cdn.simpleicons.org/mysql",
-		},
-		{
 			name: "AWS",
 			img: "https://cdn.svgporn.com/logos/aws.svg",
 		},
 		{
-			name: "Azure",
-			img: "https://cdn.svgporn.com/logos/microsoft-azure.svg",
+			name: "GCP",
+			img: "https://cdn.svgporn.com/logos/google-cloud.svg",
 		},
 		{
 			name: "Docker",
 			img: "https://cdn.svgporn.com/logos/docker-icon.svg",
 		},
 		{
-			name: "Firebase",
-			img: "https://cdn.simpleicons.org/firebase",
+			name: "Cloudflare Workers",
+			img: "/icons/cloudflare-workers.svg",
+		},
+		{
+			name: "CI/CD",
+			img: "/icons/cicd.svg",
 		},
 	],
 	Languages: [
@@ -103,51 +83,35 @@ const skills: Skills = {
 			name: "C++",
 			img: "https://cdn.svgporn.com/logos/c-plusplus.svg",
 		},
-		{
-			name: "C#",
-			img: "https://cdn.svgporn.com/logos/c-sharp.svg",
-		},
 	],
-	"Other Tools & Technologies": [
+	"AI & ML": [
+		{
+			name: "PyTorch",
+			img: "/icons/pytorch.svg",
+		},
+		{
+			name: "HuggingFace",
+			img: "/icons/huggingface.svg",
+		},
 		{
 			name: "LangChain",
 			img: "/icons/langchain.svg",
+		},
+		{
+			name: "FAISS",
+			img: "/icons/faiss.svg",
 		},
 		{
 			name: "RAG",
 			img: "/icons/rag.svg",
 		},
 		{
-			name: "FAISS",
-			img: "https://cdn.simpleicons.org/meta",
+			name: "Gemini API",
+			img: "/icons/gemini.svg",
 		},
 		{
-			name: "Chroma",
-			img: "https://cdn.simpleicons.org/chromatic",
-		},
-		{
-			name: "Unity Engine",
-			img: "https://cdn.svgporn.com/logos/unity.svg",
-		},
-		{
-			name: "Pygame",
-			img: "https://cdn.simpleicons.org/python",
-		},
-		{
-			name: "Git",
-			img: "https://cdn.svgporn.com/logos/git-icon.svg",
-		},
-		{
-			name: "GitHub",
-			img: "https://cdn.simpleicons.org/github",
-		},
-		{
-			name: "System Design",
-			img: "https://cdn.simpleicons.org/diagramsdotnet",
-		},
-		{
-			name: "DSA Basics",
-			img: "https://cdn.simpleicons.org/codechef",
+			name: "Reinforcement Learning",
+			img: "/icons/reinforcement-learning.svg",
 		},
 	],
 };

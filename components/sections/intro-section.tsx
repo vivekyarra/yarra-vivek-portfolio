@@ -25,7 +25,7 @@ const IntroSection = () => {
 					transition={{ duration: 0.6 }}
 					className="sm:text-4xl text-3xl font-bold tracking-wide"
 				>
-					I am a
+					I&apos;m an
 				</motion.h2>
 				<motion.h1
 					initial={{ opacity: 0, x: -50, filter: "blur(5px)" }}
@@ -66,9 +66,9 @@ const IntroSection = () => {
 				</div>
 				<div className="relative w-full overflow-hidden">
 					<VelocityScroll defaultVelocity={2}>
-						REST APIs • Full-Stack Web Apps • CNN Chess Engine • LLM
-						Agents • RAG Pipelines • Scalable Backend Systems • Cloud-
-						Ready Software •
+						Drone Control Platforms • Full-Stack Web Apps • AI Agent
+						Pipelines • RAG Systems • Reinforcement Learning
+						Environments • Cloud-Native Software •
 					</VelocityScroll>
 					<div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
 					<div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>

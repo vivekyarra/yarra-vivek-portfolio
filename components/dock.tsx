@@ -53,7 +53,7 @@ const DATA = {
 			},
 			LinkedIn: {
 				name: "LinkedIn",
-				url: "https://www.linkedin.com/in/vivek-yarra-b06b46367/",
+				url: "https://www.linkedin.com/in/yarra-vivek",
 				icon: Icons.linkedin,
 			},
 			Email: {
@@ -159,7 +159,7 @@ function ResumeDock() {
 							<TooltipTrigger asChild>
 								{mounted && (
 									<Button
-										aria-label="download-resume"
+										aria-label="switch-theme"
 										variant="ghost"
 										size="icon"
 										className="size-12 rounded-full"

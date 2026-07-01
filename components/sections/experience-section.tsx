@@ -19,83 +19,133 @@ import { motion } from "motion/react";
 const items = [
 	{
 		id: 1,
-		date: "2026",
-		title: "Software Engineering Virtual Experience",
-		company: "JPMorgan Chase (Forage)",
+		date: "May 2026 - Present",
+		title: "Software Engineering Intern",
+		company: "Magnumwings",
 		description: (
 			<div className="flex flex-col gap-2">
 				<ul className="list-disc ml-4">
 					<li>
-						Built a Spring Boot microservice integrating Kafka for
-						high-volume transactional processing.
+						Led end-to-end development of a real-time drone Ground
+						Control Station using Python, FastAPI, WebSockets, WebRTC,
+						and MAVLink.
 					</li>
 					<li>
-						Implemented REST APIs with JPA-backed persistence and
-						validated reliability through testing.
+						Architected a React mission dashboard with live MAVLink
+						telemetry, WebRTC video streaming, and autonomous command
+						dispatch.
+					</li>
+					<li>
+						Building interceptor drone software with low-latency
+						targeting and autonomous decision-making pipelines.
 					</li>
 				</ul>
 				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">Spring Boot</Badge>
-					<Badge variant="outline">Kafka</Badge>
-					<Badge variant="outline">REST APIs</Badge>
-					<Badge variant="outline">JPA</Badge>
+					<Badge variant="outline">Python</Badge>
+					<Badge variant="outline">FastAPI</Badge>
+					<Badge variant="outline">WebRTC</Badge>
+					<Badge variant="outline">MAVLink</Badge>
 				</div>
 			</div>
 		),
 	},
 	{
 		id: 2,
-		date: "2026",
-		title: "Cloud Architecture Virtual Experience",
-		company: "AWS APAC (Forage)",
+		date: "Nov 2025 - May 2026",
+		title: "AI/ML Intern",
+		company: "QSkill - SR India",
 		description: (
 			<div className="flex flex-col gap-2">
 				<ul className="list-disc ml-4">
 					<li>
-						Designed scalable AWS hosting architecture for growth and
-						performance bottlenecks.
+						Built and deployed text classification pipelines using
+						TF-IDF with Logistic Regression, KNN, and Naive Bayes.
 					</li>
 					<li>
-						Evaluated reliability, scalability, and cost trade-offs
-						across architecture options.
+						Evaluated models with F1-score, precision-recall, and
+						confusion matrix analysis to drive accuracy improvements.
+					</li>
+					<li>
+						Developed a Node.js/Express API with a React frontend for
+						real-time model inference from raw input to structured UI.
 					</li>
 				</ul>
 				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">AWS</Badge>
-					<Badge variant="outline">Cloud Architecture</Badge>
-					<Badge variant="outline">Scalability</Badge>
-					<Badge variant="outline">Cost Optimization</Badge>
+					<Badge variant="outline">Machine Learning</Badge>
+					<Badge variant="outline">Node.js</Badge>
+					<Badge variant="outline">React</Badge>
+					<Badge variant="outline">Model Inference</Badge>
 				</div>
 			</div>
 		),
 	},
 	{
 		id: 3,
-		date: "2026",
-		title: "Data Analytics Virtual Experience",
-		company: "Tata iQ (Forage)",
+		date: "Mar-Apr 2026",
+		title: "IoT Intern",
+		company: "Emertxe",
 		description: (
 			<div className="flex flex-col gap-2">
 				<ul className="list-disc ml-4">
 					<li>
-						Performed GenAI-assisted exploratory data analysis for
-						customer delinquency risk indicators.
+						Developed C applications on Arduino targeting
+						microcontroller architectures with sensor interfacing and
+						GPIO control.
 					</li>
 					<li>
-						Designed a no-code predictive approach for collections
-						strategy decisions.
+						Simulated and validated end-to-end circuit prototypes in
+						PicsimLab across hardware-software integration and
+						peripheral communication.
 					</li>
 				</ul>
 				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">Data Analytics</Badge>
-					<Badge variant="outline">GenAI</Badge>
-					<Badge variant="outline">EDA</Badge>
+					<Badge variant="outline">C</Badge>
+					<Badge variant="outline">Arduino</Badge>
+					<Badge variant="outline">IoT</Badge>
+					<Badge variant="outline">Embedded Systems</Badge>
 				</div>
 			</div>
 		),
 	},
 	{
 		id: 4,
+		date: "2026",
+		title: "Grand Finalist",
+		company: "Meta, PyTorch, HuggingFace, and Scaler OpenEnv Hackathon",
+		description: (
+			<div className="flex flex-col gap-2">
+				<p>
+					Selected among 800 teams from 31,000+ registrations and
+					presented live in Bangalore as a solo participant.
+				</p>
+				<div className="flex gap-2 flex-wrap">
+					<Badge variant="outline">PyTorch</Badge>
+					<Badge variant="outline">HuggingFace</Badge>
+					<Badge variant="outline">AI Agents</Badge>
+				</div>
+			</div>
+		),
+	},
+	{
+		id: 5,
+		date: "2026",
+		title: "218th Place",
+		company: "HackerRank Orchestrate",
+		description: (
+			<div className="flex flex-col gap-2">
+				<p>
+					Ranked among 12,885 participants from 48 countries in a
+					24-hour AI agent building challenge.
+				</p>
+				<div className="flex gap-2 flex-wrap">
+					<Badge variant="outline">AI Agents</Badge>
+					<Badge variant="outline">Hackathon</Badge>
+				</div>
+			</div>
+		),
+	},
+	{
+		id: 6,
 		date: "2026",
 		title: "Competitive Programming Achievement",
 		company: "Codeforces",
@@ -113,7 +163,7 @@ const items = [
 		),
 	},
 	{
-		id: 5,
+		id: 7,
 		date: "2023 - 2027",
 		title: "B.Tech in Computer Science & Engineering",
 		separator: "at",
@@ -121,32 +171,12 @@ const items = [
 		description: (
 			<div className="flex flex-col gap-2">
 				<p>
-					Current CGPA: 7.60 (up to 5th semester). Based in Guntur,
-					Andhra Pradesh.
+					Current GPA: 7.80/10.0. Based in Andhra Pradesh, India.
 				</p>
 				<div className="flex gap-2 flex-wrap">
 					<Badge variant="outline">Computer Science</Badge>
 					<Badge variant="outline">System Design</Badge>
 					<Badge variant="outline">Software Engineering</Badge>
-				</div>
-			</div>
-		),
-	},
-	{
-		id: 6,
-		date: "2025",
-		title: "Problem Solving Milestone",
-		company: "LeetCode",
-		description: (
-			<div className="flex flex-col gap-2">
-				<p>
-					Solved 500+ LeetCode problems while improving algorithmic
-					thinking, coding speed, and interview readiness.
-				</p>
-				<div className="flex gap-2 flex-wrap">
-					<Badge variant="outline">DSA</Badge>
-					<Badge variant="outline">Problem Solving</Badge>
-					<Badge variant="outline">Python</Badge>
 				</div>
 			</div>
 		),

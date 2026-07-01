@@ -24,7 +24,7 @@ const HeroSection = () => {
 					}}
 					className="mt-8 py-4 text-center text-5xl font-bold tracking-tighter md:text-6xl lg:text-8xl"
 				>
-					Hello, I am <br />
+					Hello, I&apos;m <br />
 					<AuroraText speed={2}>Yarra Vivek</AuroraText>
 				</motion.h1>
 				<motion.div
